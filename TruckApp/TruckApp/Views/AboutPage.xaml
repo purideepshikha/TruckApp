@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckApp.Views.AboutPage"
+             Title="Truck Data" >
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Picker x:Name="TruckMaker" WidthRequest="{Binding Source={x:Reference lblTruckId}, Path=Width}" 
+        Title="Select Make" 
+        TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Belaz</x:String>
+                        <x:String>Caterpillar</x:String>
+                        <x:String>Komatsu</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+        <Entry x:Name="lblTruckId" Keyboard="Numeric" Placeholder="Truck Id"></Entry>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label TextColor="Black" Text="Is Available"></Label>
+            <Switch x:Name="TruckAvailabilty" Toggled="TruckAvailabilty_Toggled"  IsToggled="true" />
+        </StackLayout>
+        <Label  Text="Purchase Date" TextColor="Black"></Label>
+        <DatePicker x:Name="TruckPurchaseDatePicker"></DatePicker>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Select Truck Image" x:Name="btnImage" Clicked="btnImage_Clicked"></Button>
+            <Image x:Name="imgSelected" WidthRequest="50" HeightRequest="50"
+                               HorizontalOptions="StartAndExpand" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Save" x:Name="btnSave" Clicked="btnSave_Clicked"></Button>
+        </StackLayout>
+
+    </StackLayout>
+
+
+</ContentPage>

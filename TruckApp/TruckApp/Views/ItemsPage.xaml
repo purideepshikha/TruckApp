@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckApp.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:TruckApp.ViewModels"  
+             xmlns:model="clr-namespace:TruckApp.Models"  
+             x:Name="BrowseItemsPage">
+
+
+
+
+    <ListView x:Name="listView"
+              Margin="20"
+              >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="20,0,0,0"
+                                 Orientation="Horizontal"
+                                 HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding MakerName}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding TruckId}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding PurchaseDate}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                        <Image Source="{Binding TruckImage}" WidthRequest="50" HeightRequest="50"
+                               HorizontalOptions="StartAndExpand" />
+                        <Label Text="{Binding IsAvailable}"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="StartAndExpand" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
