@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -11,7 +12,7 @@ namespace TruckApp.Views
     public partial class AboutPage : ContentPage
     {
         TruckDetails truckDetails = new TruckDetails();
-        private bool TruckAvailabiltySwitch = true;
+        private bool TruckAvailabiltySwitch = false;
 
         public AboutPage()
         {
@@ -21,17 +22,49 @@ namespace TruckApp.Views
         {
             try
             {
+                if (string.IsNullOrEmpty(lblTruckId.Text))
+                {
+                    await DisplayAlert("Error", "Please enter Valid Truck Number. 3 characters and 3 Numbers", "OK");
+                    return;
+                }
+                if(lblTruckId.Text.Length<6)
+                {
+                    await DisplayAlert("Error", "Please enter Valid Truck Number. 3 characters and 3 Numbers", "OK");
+                    return;
+                }
+                Regex regexObj = new Regex(@"^[a-zA-Z{3}0-9{3}]*$", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+                
+                bool foundMatch = regexObj.IsMatch(lblTruckId.Text);
+                if (foundMatch == false)
+                {
+                    await DisplayAlert("Error", "Please enter Valid Truck Number 3 characters and 3 Numbers", "OK");
+                    return;
+                }
+                if(TruckMaker.SelectedItem==null)
+                {
+                    await DisplayAlert("Error", "Please Select Make", "OK");
+                    return;
+                }
+                if (TruckPurchaseDatePicker.Date.Date.Year <2000)
+                {
+                    await DisplayAlert("Error", "Purchase Date should not be year 2000", "OK");
+                    return;
+                }
                 truckDetails.MakerName = TruckMaker.SelectedItem.ToString();
                 truckDetails.TruckId = lblTruckId.Text.ToString();
                 truckDetails.IsAvailable = TruckAvailabiltySwitch;
                 truckDetails.PurchaseDate = TruckPurchaseDatePicker.Date.ToString();
                 truckDetails.TruckImage = PhotoPath;
+                truckDetails.EditorDelete = "Edit/Delete";
                 TruckDetailsDatabase database = await TruckDetailsDatabase.Instance;
                 await database.SaveItemAsync(truckDetails);
+                await DisplayAlert("Sucess", "Successfully Inserted", "OK");
+
             }
             catch (Exception ex)
             {
                 ex.Message.ToString();
+                await DisplayAlert("Failure", "Sorry Something Wrong", "OK");
             }
         }
 
@@ -41,7 +74,10 @@ namespace TruckApp.Views
             {
                 TruckAvailabiltySwitch = false;
             }
-
+            else
+            {
+                TruckAvailabiltySwitch = true;
+            }
         }
         async Task LoadPhotoAsync(FileResult photo)
         {
@@ -87,6 +123,21 @@ namespace TruckApp.Views
         private async void btnImage_Clicked(object sender, EventArgs e)
         {
             await PickerPhotoAsync();
+
+        }
+        int restrictCount = 6;
+
+        private void lblTruckId_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            Entry entry = sender as Entry;
+            String val = entry.Text; //Get Current Text
+
+            if (val.Length > restrictCount)//If it is more than your character restriction
+            {
+                val = val.Remove(val.Length - 1);// Remove Last character 
+                entry.Text = val; //Set the Old value
+            }
 
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "51FS95geyNQ3wvJ3E8ASO76BPjQSUjhoX/qYf6PH+HEcPqKDS4lVKN4Dsu1icH/1G6qKUhufdHEK2+PRYOelIQ==",
+  "dgSpecHash": "VNCIxw0x58glCdIhmNhLJbKr52JJM/EjAT51VsmZzQdzGJLKO1z3XNq/aqB7dOqSHO6Cf5J74+0eWEkLTl9JPA==",
   "success": true,
-  "projectFilePath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
+  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/depuxa/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
@@ -13,7 +13,8 @@
     "/Users/depuxa/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
-    "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.forms.datagrid/4.8.0/xamarin.forms.datagrid.4.8.0.nupkg.sha512"
   ],
   "logs": []
 }

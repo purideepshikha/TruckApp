@@ -15,5 +15,7 @@ namespace TruckApp
 
         public string TruckImage { get; set; }
         public bool IsAvailable { get; set; }
+
+        public string EditorDelete { get; set; }
     }
 }

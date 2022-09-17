@@ -233,12 +233,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
+      },
       "TruckApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -481,12 +494,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
+      },
       "TruckApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -729,12 +755,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
+      },
       "TruckApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -977,12 +1016,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
+      },
       "TruckApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -1428,6 +1480,18 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.DataGrid/4.8.0": {
+      "sha512": "aWVJQ2W5FKrmJgmt8aBhH1RumvUycM89vL0+JlTril+4QciUwerNCr9FV62jBeEXBp6/VUF4XX+9MfJtzjPWjQ==",
+      "type": "package",
+      "path": "xamarin.forms.datagrid/4.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll",
+        "xamarin.forms.datagrid.4.8.0.nupkg.sha512",
+        "xamarin.forms.datagrid.nuspec"
+      ]
+    },
     "TruckApp/1.0.0": {
       "type": "project",
       "path": "../TruckApp/TruckApp.csproj",
@@ -1447,11 +1511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
+      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
       "projectName": "TruckApp.iOS",
-      "projectPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
+      "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.iOS/TruckApp.iOS.csproj",
       "packagesPath": "/Users/depuxa/.nuget/packages/",
-      "outputPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.iOS/obj/",
+      "outputPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1466,8 +1530,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp/TruckApp.csproj": {
-              "projectPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp/TruckApp.csproj"
+            "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj": {
+              "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj"
             }
           }
         }

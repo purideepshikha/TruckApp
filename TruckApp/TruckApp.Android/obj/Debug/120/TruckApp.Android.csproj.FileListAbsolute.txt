@@ -642,3 +642,4 @@ C:\Users\srira\source\repos\TruckApp\TruckApp\TruckApp.Android\obj\Debug\120\and
 C:\Users\srira\source\repos\TruckApp\TruckApp\TruckApp.Android\obj\Debug\120\android\assets\System.Buffers.dll
 C:\Users\srira\source\repos\TruckApp\TruckApp\TruckApp.Android\obj\Debug\120\android\assets\System.Memory.dll
 C:\Users\srira\source\repos\TruckApp\TruckApp\TruckApp.Android\obj\Debug\120\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\srira\source\repos\TruckApp\TruckApp\TruckApp.Android\obj\Debug\120\android\assets\Xamarin.Forms.DataGrid.dll

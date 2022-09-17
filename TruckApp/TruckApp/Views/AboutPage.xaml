@@ -18,7 +18,7 @@
                 </Picker.ItemsSource>
             </Picker>
         </StackLayout>
-        <Entry x:Name="lblTruckId" Keyboard="Numeric" Placeholder="Truck Id"></Entry>
+        <Entry TextChanged="lblTruckId_TextChanged" x:Name="lblTruckId"  Placeholder="Truck Id"></Entry>
 
         <StackLayout Orientation="Horizontal" Spacing="10">
             <Label TextColor="Black" Text="Is Available"></Label>

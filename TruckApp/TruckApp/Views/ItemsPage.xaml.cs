@@ -14,7 +14,6 @@ namespace TruckApp.Views
 {
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel _viewModel;
 
         public ItemsPage()
         {
@@ -27,7 +26,7 @@ namespace TruckApp.Views
             base.OnAppearing();
 
             TruckDetailsDatabase database = await TruckDetailsDatabase.Instance;
-            listView.ItemsSource = await database.GetItemsAsync();
+            lstTruckData.ItemsSource = await database.GetItemsAsync();
         }
       
     }

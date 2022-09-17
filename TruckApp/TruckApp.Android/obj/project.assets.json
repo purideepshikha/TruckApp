@@ -1580,6 +1580,18 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.DataGrid/4.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1687"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.4.0.2": {
         "type": "package",
         "dependencies": {
@@ -1639,6 +1651,7 @@
         "dependencies": {
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -3352,6 +3365,18 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.DataGrid/4.8.0": {
+      "sha512": "aWVJQ2W5FKrmJgmt8aBhH1RumvUycM89vL0+JlTril+4QciUwerNCr9FV62jBeEXBp6/VUF4XX+9MfJtzjPWjQ==",
+      "type": "package",
+      "path": "xamarin.forms.datagrid/4.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll",
+        "xamarin.forms.datagrid.4.8.0.nupkg.sha512",
+        "xamarin.forms.datagrid.nuspec"
+      ]
+    },
     "Xamarin.Google.Android.Material/1.4.0.2": {
       "sha512": "2dH8pSYjlVmZk8E64E6/hZzsoTcubsH1DHLMYpnsXnteqVuFU42uG5pIuJZIOcLxgKX/QjLdMzth6/w+Oje8sQ==",
       "type": "package",
@@ -3412,11 +3437,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
       "projectName": "TruckApp.Android",
-      "projectPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+      "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
       "packagesPath": "/Users/depuxa/.nuget/packages/",
-      "outputPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.Android/obj/",
+      "outputPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3431,8 +3456,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp/TruckApp.csproj": {
-              "projectPath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp/TruckApp.csproj"
+            "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj": {
+              "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj"
             }
           }
         }

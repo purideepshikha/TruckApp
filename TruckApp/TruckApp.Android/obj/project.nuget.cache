@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aA09kELZEh79dv7egw1DXiKcdXv5L4DMW9S9WixVlvnrHiRrApb3+DJZa7xrKs55BnD3bcxVBS38VAGSUnj4fw==",
+  "dgSpecHash": "J4Q9CZ0loGfbNPdxJvo/qDA0COy1KNEmBgJdDBtOQZO7TZM+sF1ySIPj2V6A6wdHeyKyqHKKOT55BQxHOiAOyA==",
   "success": true,
-  "projectFilePath": "/Users/depuxa/Documents/Project/xamiran/TruckApp/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
   "expectedPackageFiles": [
     "/Users/depuxa/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
@@ -68,6 +68,7 @@
     "/Users/depuxa/.nuget/packages/xamarin.androidx.viewpager2/1.0.0.10/xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.forms.datagrid/4.8.0/xamarin.forms.datagrid.4.8.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.google.android.material/1.4.0.2/xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.2/xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
