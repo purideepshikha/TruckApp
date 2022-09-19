@@ -180,7 +180,19 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.CommunityToolkit.Markup/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.3": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -192,7 +204,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -575,10 +587,27 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.7.0": {
-      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+    "Xamarin.CommunityToolkit.Markup/2.0.5": {
+      "sha512": "Tm7iZGLv0UqhwYBuGyd4ucXjf7arEktyXFteIZvUa0rHKiTXJ++f8JAsl1hnG3oHFmZiefe/Vi49Z80tMJxFLQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.7.0",
+      "path": "xamarin.communitytoolkit.markup/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.Markup.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.Markup.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.xml",
+        "xamarin.communitytoolkit.markup.2.0.5.nupkg.sha512",
+        "xamarin.communitytoolkit.markup.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.7.3": {
+      "sha512": "b6NfxOfkmMGN54a4OcV/D7KXclWWqFwgixMPzlAku3kfKgUBGW4vBdNaujIBmk57NbGpWB2IS78ek0gDHNKwoQ==",
+      "type": "package",
+      "path": "xamarin.essentials/1.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -613,14 +642,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.7.0.nupkg.sha512",
+        "xamarin.essentials.1.7.3.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2196": {
-      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
+    "Xamarin.Forms/5.0.0.2515": {
+      "sha512": "n/Y/xk1idWRkxk7xItwvNwwda7CHpIk7JxD6tXkGXmTqiVGV1xRkepf5aKXFkQLM9KIQhXXYBxPsdyJysPpktw==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2196",
+      "path": "xamarin.forms/5.0.0.2515",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -829,7 +858,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2196.nupkg.sha512",
+        "xamarin.forms.5.0.0.2515.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -849,8 +878,9 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2196",
+      "Xamarin.CommunityToolkit.Markup >= 2.0.5",
+      "Xamarin.Essentials >= 1.7.3",
+      "Xamarin.Forms >= 5.0.0.2515",
       "Xamarin.Forms.DataGrid >= 4.8.0",
       "sqlite-net-pcl >= 1.8.116"
     ]
@@ -861,11 +891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj",
+      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj",
       "projectName": "TruckApp",
-      "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj",
+      "projectPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj",
       "packagesPath": "/Users/depuxa/.nuget/packages/",
-      "outputPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/obj/",
+      "outputPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/depuxa/.config/NuGet/NuGet.Config"
@@ -898,13 +928,17 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "Xamarin.CommunityToolkit.Markup": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.7.3, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2196, )"
+            "version": "[5.0.0.2515, )"
           },
           "Xamarin.Forms.DataGrid": {
             "target": "Package",

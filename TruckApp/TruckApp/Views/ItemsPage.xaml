@@ -4,9 +4,17 @@
              x:Class="TruckApp.Views.ItemsPage"
              Title="{Binding Title}"
              xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
+             xmlns:converter="clr-namespace:TruckApp.Converters"
              xmlns:local="clr-namespace:TruckApp.ViewModels"  
-             xmlns:model="clr-namespace:TruckApp.Models"  
+            
              x:Name="BrowseItemsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="cnvInvert">
+                
+            </converter:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <!--<ListView x:Name="listView"
               Margin="20"
               >
@@ -50,18 +58,18 @@
                 </OnIdiom>
             </dg:DataGrid.HeaderFontSize>
             <dg:DataGrid.Columns>
-                <dg:DataGridColumn Title="Make" PropertyName="MakerName" Width="2*"/>
-                <dg:DataGridColumn Title="Id" PropertyName="TruckId" Width="2*"></dg:DataGridColumn>
-                <dg:DataGridColumn Title="Is available" PropertyName="IsAvailable" Width="2*"/>
-                <dg:DataGridColumn Title="Purchase Date" PropertyName="PurchaseDate" Width="2*"/>
-                <!--<dg:DataGridColumn Title="Image" PropertyName="TruckImage" Width="2*">
+                <dg:DataGridColumn Title="Truck Image" PropertyName="TruckImageArray" Width="100">
                     <dg:DataGridColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding TruckImage}" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFit" HeightRequest="60" />
+                            <Image  Aspect="AspectFill" Source="{Binding .,Converter={StaticResource cnvInvert}}"  WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"  HeightRequest="60" />
                         </DataTemplate>
                     </dg:DataGridColumn.CellTemplate>
-                </dg:DataGridColumn>-->
-                <!--<dg:DataGridColumn Title="Actions"   PropertyName="EditorDelete" Width="1*"/>-->
+                </dg:DataGridColumn>
+                <dg:DataGridColumn Title="Truck Make" PropertyName="MakerName" Width="2*"/>
+                <dg:DataGridColumn Title="Truck Id" PropertyName="TruckId" Width="2*"></dg:DataGridColumn>
+                <dg:DataGridColumn Title="Is available" PropertyName="IsAvailable" Width="2*"/>
+                <dg:DataGridColumn Title="Purchase Date" PropertyName="PurchaseDate" Width="2*"/>
+
             </dg:DataGrid.Columns>
             <dg:DataGrid.RowsBackgroundColorPalette>
                 <dg:PaletteCollection>

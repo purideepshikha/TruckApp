@@ -62,6 +62,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.VersionedParcelable.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.AndroidX.ViewPager2.dll",
+		"Xamarin.CommunityToolkit.Markup.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.DataGrid.dll",

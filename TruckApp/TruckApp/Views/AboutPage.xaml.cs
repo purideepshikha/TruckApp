@@ -56,9 +56,10 @@ namespace TruckApp.Views
                 truckDetails.PurchaseDate = TruckPurchaseDatePicker.Date.ToString();
                 truckDetails.TruckImage = PhotoPath;
                 truckDetails.EditorDelete = "Edit/Delete";
+                truckDetails.TruckImageArray = photoStream;
                 TruckDetailsDatabase database = await TruckDetailsDatabase.Instance;
                 await database.SaveItemAsync(truckDetails);
-                await DisplayAlert("Sucess", "Successfully Inserted", "OK");
+                await DisplayAlert("Sucess", "Successfully Inserted TruckData", "OK");
 
             }
             catch (Exception ex)
@@ -67,7 +68,16 @@ namespace TruckApp.Views
                 await DisplayAlert("Failure", "Sorry Something Wrong", "OK");
             }
         }
-
+        private byte[] GetImageBytes(Stream stream)
+        {
+            byte[] ImageBytes;
+            using (var memoryStream = new System.IO.MemoryStream())
+            {
+                stream.CopyTo(memoryStream);
+                ImageBytes = memoryStream.ToArray();
+            }
+            return ImageBytes;
+        }
         private void TruckAvailabilty_Toggled(object sender, ToggledEventArgs e)
         {
             if (TruckAvailabiltySwitch)
@@ -79,6 +89,7 @@ namespace TruckApp.Views
                 TruckAvailabiltySwitch = true;
             }
         }
+        public byte[] photoStream;
         async Task LoadPhotoAsync(FileResult photo)
         {
             // canceled
@@ -89,12 +100,18 @@ namespace TruckApp.Views
             }
             // save the file into local storage
             var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+             
             using (Stream stream = await photo.OpenReadAsync())
-            using (var newStream = File.OpenWrite(newFile))
             {
-                await stream.CopyToAsync(newStream);
-
+                photoStream = this.GetImageBytes(stream);
+                using (Stream newStream = File.OpenWrite(newFile))
+                {
+                    await stream.CopyToAsync(newStream);
+                 
+                }
             }
+            
+            
             PhotoPath = newFile;
         }
         string PhotoPath = null;
@@ -103,6 +120,7 @@ namespace TruckApp.Views
             try
             {
                 var photo = await MediaPicker.CapturePhotoAsync();
+            
                 await LoadPhotoAsync(photo);
                 imgSelected.Source = photo.FullPath;
                 Console.WriteLine($"CapturePhotoAsync COMPLETED: {PhotoPath}");

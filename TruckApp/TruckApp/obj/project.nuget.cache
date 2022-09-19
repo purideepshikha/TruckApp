@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dZ2VdicUvNqOa9cw7yeyUEyWeFhZoAcraOhvYwZ2W1hp6slj22xxMP94F4EX0EJzI1zdKplLqzcq2Ss8ndfNPQ==",
+  "dgSpecHash": "QxAvnoZsalCYu24uGXWlj4pobX1E1EmCVuz0FawFngKwmjzPGQPyHsJn1RE7+QyYdff5/IoiAda7rfwoGjM8Xg==",
   "success": true,
-  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj",
+  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj",
   "expectedPackageFiles": [
     "/Users/depuxa/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
@@ -15,8 +15,9 @@
     "/Users/depuxa/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "/Users/depuxa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
-    "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.communitytoolkit.markup/2.0.5/xamarin.communitytoolkit.markup.2.0.5.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.forms.datagrid/4.8.0/xamarin.forms.datagrid.4.8.0.nupkg.sha512"
   ],
   "logs": []

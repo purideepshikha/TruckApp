@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v12.0": {
+    "MonoAndroid,Version=v11.0": {
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -1532,6 +1532,18 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.ViewPager2.targets": {}
         }
       },
+      "Xamarin.CommunityToolkit.Markup/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -1649,8 +1661,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.CommunityToolkit.Markup": "2.0.5",
+          "Xamarin.Essentials": "1.7.3",
+          "Xamarin.Forms": "5.0.0.2515",
           "Xamarin.Forms.DataGrid": "4.8.0",
           "sqlite-net-pcl": "1.8.116"
         },
@@ -3107,6 +3120,23 @@
         "xamarin.androidx.viewpager2.nuspec"
       ]
     },
+    "Xamarin.CommunityToolkit.Markup/2.0.5": {
+      "sha512": "Tm7iZGLv0UqhwYBuGyd4ucXjf7arEktyXFteIZvUa0rHKiTXJ++f8JAsl1hnG3oHFmZiefe/Vi49Z80tMJxFLQ==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit.markup/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.Markup.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.Markup.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.Markup.xml",
+        "xamarin.communitytoolkit.markup.2.0.5.nupkg.sha512",
+        "xamarin.communitytoolkit.markup.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.7.0": {
       "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
       "type": "package",
@@ -3425,7 +3455,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v12.0": [
+    "MonoAndroid,Version=v11.0": [
       "TruckApp >= 1.0.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196"
@@ -3437,34 +3467,34 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+      "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
       "projectName": "TruckApp.Android",
-      "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+      "projectPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
       "packagesPath": "/Users/depuxa/.nuget/packages/",
-      "outputPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/obj/",
+      "outputPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
         "/Users/depuxa/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid12.0"
+        "monoandroid11.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid12.0": {
+        "monoandroid11.0": {
           "projectReferences": {
-            "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj": {
-              "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj"
+            "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj": {
+              "projectPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "monoandroid12.0": {
+      "monoandroid11.0": {
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",
@@ -3477,5 +3507,27 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.3 to 1.7.0. Reference the package directly from the project to select a different version. \n TruckApp.Android -> TruckApp -> Xamarin.Essentials (>= 1.7.3) \n TruckApp.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2515 to 5.0.0.2196. Reference the package directly from the project to select a different version. \n TruckApp.Android -> TruckApp -> Xamarin.Forms (>= 5.0.0.2515) \n TruckApp.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

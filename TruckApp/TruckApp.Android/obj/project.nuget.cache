@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J4Q9CZ0loGfbNPdxJvo/qDA0COy1KNEmBgJdDBtOQZO7TZM+sF1ySIPj2V6A6wdHeyKyqHKKOT55BQxHOiAOyA==",
+  "dgSpecHash": "dsMg4WJ8Wya0GzMfSno10Bvtusosy0eBDx2kb0gYqYim0IAHGJNNBuXPXP2D01EwaOk84GkSbt6MgNdZ9I6qmw==",
   "success": true,
-  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
+  "projectFilePath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp.Android/TruckApp.Android.csproj",
   "expectedPackageFiles": [
     "/Users/depuxa/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
@@ -66,11 +66,33 @@
     "/Users/depuxa/.nuget/packages/xamarin.androidx.versionedparcelable/1.1.1.8/xamarin.androidx.versionedparcelable.1.1.1.8.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.androidx.viewpager/1.0.0.8/xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.androidx.viewpager2/1.0.0.10/xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
+    "/Users/depuxa/.nuget/packages/xamarin.communitytoolkit.markup/2.0.5/xamarin.communitytoolkit.markup.2.0.5.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.forms.datagrid/4.8.0/xamarin.forms.datagrid.4.8.0.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.google.android.material/1.4.0.2/xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "/Users/depuxa/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.2/xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.3 to 1.7.0. Reference the package directly from the project to select a different version. \n TruckApp.Android -> TruckApp -> Xamarin.Essentials (>= 1.7.3) \n TruckApp.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2515 to 5.0.0.2196. Reference the package directly from the project to select a different version. \n TruckApp.Android -> TruckApp -> Xamarin.Forms (>= 5.0.0.2515) \n TruckApp.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

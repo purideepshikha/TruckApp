@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj": {}
+    "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj": {}
   },
   "projects": {
-    "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj": {
+    "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj",
+        "projectUniqueName": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj",
         "projectName": "TruckApp",
-        "projectPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/TruckApp.csproj",
+        "projectPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/TruckApp.csproj",
         "packagesPath": "/Users/depuxa/.nuget/packages/",
-        "outputPath": "/Users/depuxa/Downloads/TruckApp-2/TruckApp/TruckApp/obj/",
+        "outputPath": "/Users/depuxa/Downloads/TruckApp-3/TruckApp/TruckApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/depuxa/.config/NuGet/NuGet.Config"
@@ -44,13 +44,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xamarin.CommunityToolkit.Markup": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.7.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2515, )"
             },
             "Xamarin.Forms.DataGrid": {
               "target": "Package",

@@ -12,10 +12,10 @@ namespace TruckApp
         public string MakerName { get; set; }
         public string TruckId { get; set; }
         public string PurchaseDate { get; set; }
-
         public string TruckImage { get; set; }
         public bool IsAvailable { get; set; }
-
         public string EditorDelete { get; set; }
+        public byte[] TruckImageArray { get; set; }
+       
     }
 }

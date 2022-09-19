@@ -18,7 +18,6 @@ namespace TruckApp.Views
         public ItemsPage()
         {
             InitializeComponent();
-
         }
 
         protected override async void OnAppearing()
